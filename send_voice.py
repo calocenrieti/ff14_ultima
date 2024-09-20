@@ -1,8 +1,9 @@
 import requests
+import streamlit as st
 
 def send_voice(file):
     # AmiVoiceのAPIキーを設定(マイページで確認できます)
-    APP_KEY = "2D37CA6298044B8ABA356500804316062808AC94306A0503E76E3DFADA73B5BC5104B76AA4684F"
+    APP_KEY = st.secrets["APP_KEY"]
 
     # 認識対象の音声ファイルパス
     # AUDIO_FILE = "output.wav"
